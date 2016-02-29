@@ -34,6 +34,11 @@ better than ES5?
 var self = this;
 ```
 ---
+## Features
+...
+---
 ## Links
 
 * [Full specification](http://www.ecma-international.org/ecma-262/6.0/)
+* [ES6 features](https://github.com/lukehoban/es6features)
+* [ES6 features and comparison](http://es6-features.org/)
