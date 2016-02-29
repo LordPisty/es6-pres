@@ -4,9 +4,7 @@
 * Overview
 * Features
 * links
-
-
-
+---
 ## ECMAHistory
 
 * ECMAScript specification: a standardized specification of a scripting language developed by Brendan Eich of Netscape (December 1995)
@@ -17,9 +15,7 @@
 
 
 > ...JavaScript had enough good at the beginning to survive
-
-
-
+---
 ## Overview of ECMAScript 6 / ECMAScript 2015
 
 * latest version of the ECMAScript standard (finalized in June 2015)
