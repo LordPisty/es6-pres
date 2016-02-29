@@ -114,6 +114,51 @@ var self = this;
 }())
 ```
 
+--
+## Arrows
+* expression
+```javascript 
+(function()
+{
+    'use strict'
+	let vowels = ['a','e','i','o','u'];
+	console.log(vowels.map(v => v+v))
+}())
+```
+
+* statement
+```javascript
+(function()
+{
+    'use strict'
+	let vowels = ['a','e','i','o','u'];
+	console.log(vowels.map(v => {
+		if (v === 'i') {
+			return v+v+v
+		} else {
+			return v+v
+		}
+	}))
+}())
+```
+
+* lexical this
+```javascript
+(function()
+{
+	'use strict'
+	let professor = {
+  		_name: "Mr Known",
+  		_classes: ['CS101','CS404'],
+  		presentCourses() {
+    		this._classes.forEach(c =>
+      		console.log(this._name + " teaches " + c));
+  		}
+	}
+	professor.presentCourses()
+}())
+```
+
 ---
 ## Links
 
