@@ -36,6 +36,7 @@ var self = this;
 ---
 ## Features
 ...
+Note: test test
 ---
 ## Links
 
