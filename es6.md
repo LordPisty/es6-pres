@@ -82,6 +82,35 @@ var self = this;
 }())
 ```
 
+--
+## Block Scoping 2
+```javascript 
+// ES5 - Hoisting
+(function()
+{
+	function fizz () { return 1; }
+    console.log(fizz() === 1);
+    (function () {
+        function fizz () { return 2; }
+        console.log(fizz() === 2);
+    })();
+    console.log(fizz() === 1);
+}());
+
+// ES6
+(function()
+{
+    'use strict'
+    function buzz () { return 1 }
+    console.log(buzz() === 1)
+    {
+        function buzz () { return 2 }
+        console.log(buzz() === 2)
+    }
+    console.log(buzz() === 1)
+}())
+```
+
 ---
 ## Links
 
