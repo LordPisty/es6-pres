@@ -55,7 +55,7 @@ G = 3
 ### Block Scoping
 ```javascript 
 // ES5
-var a = [0,0,0];
+var a = [1,2,3];
 var i, x;
 for (i = 0; i < a.length; i++) {
     x = a[i];
@@ -63,7 +63,7 @@ for (i = 0; i < a.length; i++) {
 }
 
 // ES6
-var b = [0,0,0]
+var b = [1,2,3]
 for (let j = 0; j < b.length; j++) {
     let y = b[j]
     console.log(y)
