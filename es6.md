@@ -1,4 +1,4 @@
-## Index
+### Index
 
 * ECMAHistory
 * Overview
@@ -20,3 +20,8 @@
 
 * latest version of the ECMAScript standard (finalized in June 2015)
 * first significant update to the language since ES5 was standardized in 2009
+* support is underway: [Compatibility table](http://kangax.github.io/compat-table/es6/)
+---
+## Links
+
+* [Full specification](http://www.ecma-international.org/ecma-262/6.0/)
