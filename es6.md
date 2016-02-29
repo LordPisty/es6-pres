@@ -42,38 +42,41 @@ var self = this;
 ...
 
 --
-## Features
-### Constants
+## Constants
 ```javascript 
-const G = 9.8 // g = 9.8 m/s2
-G > 9
-G = 3
+(function()
+{
+    'use strict';
+	const G = 9.8 // g = 9.8 m/s2
+	console.log(G > 9)
+	G = 3
+}());
 ```
 
 --
-## Features
-### Block Scoping
+## Block Scoping
 ```javascript 
 // ES5
 var a = [1,2,3];
 var i, x;
 for (i = 0; i < a.length; i++) {
     x = a[i];
-    console.log(x);
+    console.log('x: '+x);
 }
 
 // ES6
 (function()
 {
-    'use strict';
+    'use strict'
 	var b = [1,2,3]
 	for (let j = 0; j < b.length; j++) {
     	let y = b[j]
-    	console.log(y)
+    	console.log('j: '+j)
+    	console.log('y: '+y)
 	}
-	console.log(j)
-	console.log(y)
-}());
+	console.log('j: '+j)
+    console.log('y: '+y)
+}())
 ```
 
 ---
