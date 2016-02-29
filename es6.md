@@ -113,6 +113,7 @@ var self = this;
 --
 ## Arrows
 * expression
+
 ```javascript 
 {
     'use strict'
@@ -122,6 +123,7 @@ var self = this;
 ```
 
 * statement
+
 ```javascript
 {
     'use strict'
@@ -139,6 +141,7 @@ var self = this;
 --
 ## Arrows 2
 * lexical this
+
 ```javascript
 {
 	'use strict'
