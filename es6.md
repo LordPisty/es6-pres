@@ -21,6 +21,14 @@
 * latest version of the ECMAScript standard (finalized in June 2015)
 * first significant update to the language since ES5 was standardized in 2009
 * support is underway: [Compatibility table](http://kangax.github.io/compat-table/es6/)
+* code-name "ES.next" or "Harmony"
+--
+## Overview of ECMAScript 6 / ECMAScript 2015
+
+better than ES5?
+* cleaner design
+* syntax increases expressiveness of the code, less boilerplate
+* get rid of hacks ( ```var self = this;``` )
 ---
 ## Links
 
