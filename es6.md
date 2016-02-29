@@ -44,6 +44,24 @@ const G = 9.8 // g = 9.8 m/s2
 G > 9
 G = 3
 ```
+--
+## Features
+### Block Scoping
+```javascript 
+// ES5
+var a = [0,0,0];
+var i, x;
+for (i = 0; i < a.length; i++) {
+    x = a[i];
+}
+
+// ES6
+var b = [0,0,0]
+for (let j = 0; j < b.length; j++) {
+    let y = b[j]
+}
+
+```
 ---
 ## Links
 
