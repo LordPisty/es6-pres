@@ -164,6 +164,31 @@ var self = this;
 }())
 ```
 
+--
+## Parameters
+```javascript
+(function()
+{
+	'use strict'
+	// default
+	function f_def (a, b = 3) {
+    console.log('result: ' + (a + b))
+	}
+	f_def(2)
+	// rest
+	function f_rest (a, ...rest) {
+		console.log('a: ' + a)
+		console.log('length: ' + rest.length)
+	}
+	// spread
+	let c = [1,2]
+	let d = [3,4,...c]
+	f_rest(5,...d)
+	let e = 'accuity'
+	f_rest(6, ...e)
+}())
+```
+
 ---
 ## Links
 
