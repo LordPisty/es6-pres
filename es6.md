@@ -57,7 +57,6 @@ var self = this;
 ## Block Scoping
 ```javascript 
 // ES5
-(function()
 {
 	var a = [1,2,3];
 	var i, x;
@@ -68,10 +67,9 @@ var self = this;
 	}
 	console.log('i: '+i);
 	console.log('x: '+x);
-}());
+}
 
 // ES6
-(function()
 {
     'use strict'
     var b = [1,2,3]
@@ -82,14 +80,13 @@ var self = this;
     }
     console.log('t: '+t)
     console.log('y: '+y)
-}())
+}
 ```
 
 --
 ## Block Scoping 2
 ```javascript 
 // ES5 - Hoisting
-(function()
 {
 	function fizz () { return 1; }
     console.log(fizz() === 1);
@@ -98,10 +95,9 @@ var self = this;
         console.log(fizz() === 2);
     })();
     console.log(fizz() === 1);
-}());
+}
 
 // ES6
-(function()
 {
     'use strict'
     function buzz () { return 1 }
@@ -111,24 +107,22 @@ var self = this;
         console.log(buzz() === 2)
     }
     console.log(buzz() === 1)
-}())
+}
 ```
 
 --
 ## Arrows
 * expression
 ```javascript 
-(function()
 {
     'use strict'
 	let vowels = ['a','e','i','o','u'];
 	console.log(vowels.map(v => v+v))
-}())
+}
 ```
 
 * statement
 ```javascript
-(function()
 {
     'use strict'
 	let vowels = ['a','e','i','o','u'];
@@ -139,12 +133,13 @@ var self = this;
 			return v+v
 		}
 	}))
-}())
+}
 ```
 
+--
+## Arrows 2
 * lexical this
 ```javascript
-(function()
 {
 	'use strict'
 	let professor = {
@@ -156,7 +151,7 @@ var self = this;
   		}
 	}
 	professor.presentCourses()
-}())
+}
 ```
 
 ---
