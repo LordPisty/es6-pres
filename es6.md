@@ -63,12 +63,17 @@ for (i = 0; i < a.length; i++) {
 }
 
 // ES6
-var b = [1,2,3]
-for (let j = 0; j < b.length; j++) {
-    let y = b[j]
-    console.log(y)
-}
-
+(function()
+{
+    'use strict';
+	var b = [1,2,3]
+	for (let j = 0; j < b.length; j++) {
+    	let y = b[j]
+    	console.log(y)
+	}
+	console.log(j)
+	console.log(y)
+}());
 ```
 
 ---
