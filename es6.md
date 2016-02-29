@@ -10,11 +10,13 @@
 ## ECMAHistory
 
 * ECMAScript specification: a standardized specification of a scripting language developed by Brendan Eich of Netscape (December 1995)
-* (Computing Conversations with Brendan Eich)[https://www.youtube.com/watch?v=IPxQ9kEaF8c]
-
-> ... 
+* prototyped in 10 days
+* [Computing Conversations with Brendan Eich](https://www.youtube.com/watch?v=IPxQ9kEaF8c)
 
 > ...written to be malleable, allowing programmers to establish their own patterns and best practices.
+> ...JavaScript had enough good at the beginning to survive
+
+
 
 ## Overview of ECMAScript 6 / ECMAScript 2015
 
