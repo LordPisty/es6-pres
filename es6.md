@@ -63,8 +63,11 @@ var self = this;
 	var i, x;
 	for (i = 0; i < a.length; i++) {
 	    x = a[i];
+	    console.log('i: '+i);
 	    console.log('x: '+x);
 	}
+	console.log('i: '+i);
+	console.log('x: '+x);
 }());
 
 // ES6
