@@ -15,6 +15,7 @@
 
 > ...written to be malleable, allowing programmers to establish their own patterns and best practices.
 
+
 > ...JavaScript had enough good at the beginning to survive
 
 
