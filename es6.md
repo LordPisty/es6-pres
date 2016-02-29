@@ -28,7 +28,10 @@
 better than ES5?
 * cleaner design
 * syntax increases expressiveness of the code, less boilerplate
-* get rid of hacks: ```javascript var self = this;```
+* get rid of hacks: 
+```javascript 
+var self = this;
+```
 ---
 ## Links
 
