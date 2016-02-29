@@ -53,12 +53,14 @@ var a = [0,0,0];
 var i, x;
 for (i = 0; i < a.length; i++) {
     x = a[i];
+    console.log(x);
 }
 
 // ES6
 var b = [0,0,0]
 for (let j = 0; j < b.length; j++) {
     let y = b[j]
+    console.log(y);
 }
 
 ```
