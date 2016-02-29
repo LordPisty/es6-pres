@@ -3,7 +3,7 @@
 * ECMAHistory
 * Overview
 * Features
-* links
+* Links
 ---
 ## ECMAHistory
 
@@ -36,7 +36,14 @@ var self = this;
 ---
 ## Features
 ...
-Note: test test
+--
+## Features
+### Constants
+```javascript 
+const G = 9.8 // g = 9.8 m/s2
+G > 9
+G = 3
+```
 ---
 ## Links
 
