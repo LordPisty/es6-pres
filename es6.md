@@ -4,6 +4,7 @@
 * Overview
 * Features
 * Links
+
 ---
 ## ECMAHistory
 
@@ -15,6 +16,7 @@
 
 
 > ...JavaScript had enough good at the beginning to survive
+
 ---
 ## Overview of ECMAScript 6 / ECMAScript 2015
 
@@ -22,6 +24,7 @@
 * first significant update to the language since ES5 was standardized in 2009
 * support is underway: [Compatibility table](http://kangax.github.io/compat-table/es6/)
 * code-name "ES.next" or "Harmony"
+
 --
 ## Overview of ECMAScript 6 / ECMAScript 2015
 
@@ -33,9 +36,11 @@ better than ES5?
 ```javascript 
 var self = this;
 ```
+
 ---
 ## Features
 ...
+
 --
 ## Features
 ### Constants
@@ -44,6 +49,7 @@ const G = 9.8 // g = 9.8 m/s2
 G > 9
 G = 3
 ```
+
 --
 ## Features
 ### Block Scoping
@@ -60,10 +66,11 @@ for (i = 0; i < a.length; i++) {
 var b = [0,0,0]
 for (let j = 0; j < b.length; j++) {
     let y = b[j]
-    console.log(y);
+    console.log(y)
 }
 
 ```
+
 ---
 ## Links
 
