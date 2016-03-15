@@ -189,6 +189,42 @@ var self = this;
 }())
 ```
 
+--
+## Template Literals
+```javascript
+(function()
+{
+	'use strict'
+	var model = {name: 'test', a: 4, b: 5}
+	var msg = `Hello ${model.name}: 
+	${model.a * model.b}`
+	console.log(msg)
+}())
+```
+
+--
+## Template Literals 2
+```javascript
+(function()
+{
+	'use strict'
+	var a = 5
+	var b = 10
+	function tag(strings, ...values) {
+		console.log(strings[0]); 
+  		console.log(strings[1]); 
+  		console.log(values[0]);  
+  		console.log(values[1]);  
+		console.log(strings.raw[0]); 
+  		console.log(strings.raw[1]); 
+  		
+  		return "Bazinga!";
+	}
+
+	tag`Hello \n ${ a + b } world ${ a * b }`;
+}())
+```
+
 ---
 ## Links
 
