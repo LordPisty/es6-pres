@@ -46,7 +46,7 @@ var self = this;
 ```javascript 
 (function()
 {
-    'use strict';
+	'use strict';
 	const G = 9.8 // g = 9.8 m/s2
 	console.log(G > 9)
 	G = 3
@@ -62,9 +62,9 @@ var self = this;
 	var a = [1,2,3];
 	var i, x;
 	for (i = 0; i < a.length; i++) {
-	    x = a[i];
-	    console.log('i: '+i);
-	    console.log('x: '+x);
+		x = a[i];
+		console.log('i: '+i);
+		console.log('x: '+x);
 	}
 	console.log('i: '+i);
 	console.log('x: '+x);
@@ -73,15 +73,15 @@ var self = this;
 // ES6
 (function()
 {
-    'use strict'
-    var b = [1,2,3]
-    for (let t = 0; t < b.length; t++) {
-        let y = b[t]
-        console.log('t: '+t)
-        console.log('y: '+y)
-    }
-    console.log('t: '+t)
-    console.log('y: '+y)
+	'use strict'
+	var b = [1,2,3]
+	for (let t = 0; t < b.length; t++) {
+		let y = b[t]
+		console.log('t: '+t)
+		console.log('y: '+y)
+	}
+	console.log('t: '+t)
+	console.log('y: '+y)
 }())
 ```
 
@@ -92,25 +92,25 @@ var self = this;
 (function()
 {
 	function fizz () { return 1; }
-    console.log(fizz() === 1);
-    (function () {
-        function fizz () { return 2; }
-        console.log(fizz() === 2);
-    })();
-    console.log(fizz() === 1);
+	console.log(fizz() === 1);
+	(function () {
+		function fizz () { return 2; }
+		console.log(fizz() === 2);
+	})();
+	console.log(fizz() === 1);
 }());
 
 // ES6
 (function()
 {
-    'use strict'
-    function buzz () { return 1 }
-    console.log(buzz() === 1)
-    {
-        function buzz () { return 2 }
-        console.log(buzz() === 2)
-    }
-    console.log(buzz() === 1)
+	'use strict'
+	function buzz () { return 1 }
+	console.log(buzz() === 1)
+	{
+		function buzz () { return 2 }
+		console.log(buzz() === 2)
+	}
+	console.log(buzz() === 1)
 }())
 ```
 
@@ -121,7 +121,7 @@ var self = this;
 ```javascript 
 (function()
 {
-    'use strict'
+	'use strict'
 	let vowels = ['a','e','i','o','u'];
 	console.log(vowels.map(v => v+v))
 }())
@@ -132,7 +132,7 @@ var self = this;
 ```javascript
 (function()
 {
-    'use strict'
+	'use strict'
 	let vowels = ['a','e','i','o','u'];
 	console.log(vowels.map(v => {
 		if (v === 'i') {
@@ -156,8 +156,8 @@ var self = this;
   		_name: "Mr Known",
   		_classes: ['CS101','CS404'],
   		presentCourses() {
-    		this._classes.forEach(c =>
-      		console.log(this._name + " teaches " + c));
+			this._classes.forEach(c =>
+	  		console.log(this._name + " teaches " + c));
   		}
 	}
 	professor.presentCourses()
@@ -172,7 +172,7 @@ var self = this;
 	'use strict'
 	// default
 	function f_def (a, b = 3) {
-    console.log('result: ' + (a + b))
+	console.log('result: ' + (a + b))
 	}
 	f_def(2)
 	// rest
@@ -211,17 +211,119 @@ var self = this;
 	var a = 5
 	var b = 10
 	function tag(strings, ...values) {
-		console.log(strings[0]); 
-  		console.log(strings[1]); 
-  		console.log(values[0]);  
-  		console.log(values[1]);  
-		console.log(strings.raw[0]); 
-  		console.log(strings.raw[1]); 
-  		
-  		return "Bazinga!";
+		console.log(strings[0]) 
+		console.log(strings[1])
+		console.log(values[0])  
+		console.log(values[1])
+		console.log(strings.raw[0]) 
+		console.log(strings.raw[1])
+		
+		return "Bazinga!"
 	}
 
-	tag`Hello \n ${ a + b } world ${ a * b }`;
+	console.log(tag`Hello \n ${ a + b } world ${ a * b }`)
+}())
+```
+
+--
+## Extended Literals
+```javascript
+(function()
+{
+	'use strict'
+	// binary
+	console.log(0b1011 === 11)
+	// octal
+	console.log(0o31 === 25)
+
+	console.log("𠮷".length === 2)
+	console.log("𠮷" === "\uD842\uDFB7")
+	console.log("𠮷" === "\u{20BB7}")
+	console.log("𠮷".codePointAt(0) == 0x20BB7)
+	for (let codepoint of "𠮷") console.log(codepoint)
+}())
+```
+
+--
+## Enhanced Object Literals
+```javascript
+(function()
+{
+	'use strict'
+	var x = 3
+	var obj = {
+		// Shorthand for x: x
+		x,
+		// Methods
+		toString() {
+			// Super calls
+			return "es6 " + super.toString();
+		},
+		// Computed (dynamic) property names
+		[ 'prop_' + (() => 3)() ]: 9
+	}
+	console.log(obj.x)
+	console.log(obj.toString())
+	console.log(obj.prop_3)
+}())
+```
+
+--
+## Destructuring
+```javascript
+(function()
+{
+	'use strict'
+	// array
+	var source = [1,2,3,4]
+	var [a,,,b] = source
+	console.log(a + ' ' + b)
+	// swap 
+	var c = 1, d = 2;
+	[d, c] = [c, d];
+	console.log(c + ' ' + d);
+}())
+```
+
+--
+## Destructuring 2
+```javascript
+(function()
+{
+	'use strict'
+	// objects
+	var retVal = {
+			l: 'l',
+			r: 'r',
+			deep: {
+				c: 'c'
+			}
+		}
+	var getObj = function() {
+		return retVal
+	}
+	var {l: left, r: right, deep: {c: ccc}} = getObj()
+	console.log(left)
+	console.log(right)
+	console.log(ccc)
+}())
+```
+
+--
+## Destructuring 3
+```javascript
+(function()
+{
+	'use strict'
+	// functions
+	function g ({ name: n, val: v }) {
+		console.log('g',n, v)
+	}
+	function h ({ name, val }) {
+		console.log('h',name, val)
+	}
+	g({ name: "foo", val:  7 })
+	h({ name: "foo", val:  7 });
 }())
 ```
 
