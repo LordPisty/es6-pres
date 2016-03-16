@@ -327,6 +327,24 @@ var self = this;
 }())
 ```
 
+--
+## Destructuring 4
+```javascript
+(function()
+{
+	'use strict'
+	// fail-soft
+	var [a] = []
+	console.log(a === undefined)
+
+	var [b = 1] = []
+	console.log(b)
+
+	var [c = 1] = [4]
+	console.log(c)
+}())
+```
+
 ---
 ## Links
 
